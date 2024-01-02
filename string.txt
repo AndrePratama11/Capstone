@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Capstone2</string>
+    <string name="edemail">Email</string>
+    <string name="epass">Password</string>
+    <string name="tLogin">LOGIN</string>
+    <string name="register">Register</string>
+    <string name="edname">Masukkan Nama</string>
+    <string name="edmail">Masukkan Email</string>
+
+</resources>

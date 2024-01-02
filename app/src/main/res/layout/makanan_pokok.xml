@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/food_benner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bannerfood"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/daftarlatihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="STAPLE FOODS"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/food_benner" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searching"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search"
+        android:layout_margin="16dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@+id/daftarlatihan"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    <!--  NAVBAR  -->
+
+
+    <ListView
+        android:id="@+id/listViewExercises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5sp"
+        app:layout_constraintTop_toBottomOf="@id/searching"
+        tools:listitem="@layout/list_item"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bot_nav"
+        />
+    <View
+        android:id="@+id/homeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Content of home view goes here -->
+    </View>
+
+    <View
+        android:id="@+id/foodView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <!-- Content of food view goes here -->
+    </View>
+
+    <View
+        android:id="@+id/historyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <!-- Content of history view goes here -->
+    </View>
+
+    <View
+        android:id="@+id/scheduleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <!-- Content of schedule view goes here -->
+    </View>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

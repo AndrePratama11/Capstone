@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Judul Latihan"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="110dp"
+        />
+
+    <Spinner
+        android:id="@+id/edJudullat"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name3"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        />
+
+    <TextView
+        android:id="@+id/nametgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Tanggal"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/edJudullat"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="30dp" />
+
+    <EditText
+        android:id="@+id/edtgl"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Tanggal"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nametgl"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/tanggal"
+        app:layout_constraintStart_toEndOf="@id/edtgl"
+        app:layout_constraintTop_toBottomOf="@id/nametgl"
+        android:contentDescription="Pilih Tanggal"
+    />
+
+
+    <TextView
+        android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Jam"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/edtgl"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="30dp" />
+
+
+
+    <EditText
+        android:id="@+id/edwaktu"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Waktu"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/waktu"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"/>
+
+
+    <ImageButton
+        android:id="@+id/btn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/waktu"
+        app:layout_constraintStart_toEndOf="@id/edwaktu"
+        app:layout_constraintTop_toBottomOf="@id/waktu"
+        android:contentDescription="Pilih Waktu"
+    />
+
+
+    <ImageView
+        android:id="@+id/img_salad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/editbox_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@id/edwaktu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
